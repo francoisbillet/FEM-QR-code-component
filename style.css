@@ -1,0 +1,118 @@
+/* CSS RESET */
+
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+
+html {
+    box-sizing: border-box;
+}
+
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
+/* STYLE SHEET */
+
+@font-face {
+    font-family: Outfit;
+    src: url(fonts/Outfit-VariableFont_wght.ttf);
+}
+
+:root {
+    --main-background-color: hsl(212, 45%, 89%);
+    --secondary-background-color: hsl(0, 0%, 100%);
+
+    --main-color: hsl(220, 15%, 55%);
+
+    --main-font-size: 15px;
+
+    --weight400: 400;
+    --weight700: 700;
+}
+
+body {
+    background-color: var(--main-background-color);
+    margin-top: 100px;
+}
+
+.component {
+    background-color: var(--secondary-background-color);
+    width: 250px;
+    margin: auto;
+    padding: 12px;
+    border-radius: 15px;
+}
+
+.component img {
+    max-width: 100%;
+    max-height: 100%;
+    border-radius: 10px;
+}
+
+.component .text-container {
+    font-family: 'Outfit', 'Times New Roman', Times, serif;
+    margin: 25px 0;
+    text-align: center;
+}
+
+.component h1 {
+    font-size: 16px;
+    font-weight: var(--weight700);
+    margin-bottom: 10px;
+    line-height: 1.4rem;
+    letter-spacing: 1px;
+}
+
+.component p {
+    font-weight: var(--weight400);
+    color: var(--main-color);
+    line-height: 1.1rem;
+    font-size: var(--main-font-size);
+}
